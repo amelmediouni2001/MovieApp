@@ -35,15 +35,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         return cell!
+                
+    }
+    
+    //Cellule OnClickListenner
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let movie = data[indexPath.row]
+        performSegue(withIdentifier: "mSegue", sender: movie)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let movie = sender as! String
+        
+        //Le passage de parametre dun controle a un autre
+        let destination = segue.destination as! DetailsViewController
+        destination.movieTitle = movie
+                
         
         
     }
     
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 
