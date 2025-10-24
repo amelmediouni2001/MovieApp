@@ -53,7 +53,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="K9K-3B-Ww0"/>
                     <connections>
-                        <segue destination="Aho-hr-SMn" kind="show" identifier="mSegue" id="6B6-cB-7vr"/>
+                        <segue destination="Aho-hr-SMn" kind="show" identifier="mSegue" id="Zja-Hc-bfk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -63,7 +63,7 @@
         <!--Movie Details-->
         <scene sceneID="xhJ-0n-8vj">
             <objects>
-                <viewController id="Aho-hr-SMn" customClass="DetailsViewController" customModule="WorkshopIOSTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="Aho-hr-SMn" customClass="DetailsViewController" customModule="WorkshopIOSTV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9le-qk-wgZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,6 +111,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5OX-je-lMC">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGt-c5-GBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bj7-2T-7Om" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XZa-FD-9vF">
@@ -122,7 +123,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Drq-fa-xA5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JGt-c5-GBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
